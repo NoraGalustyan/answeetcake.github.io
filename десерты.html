@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="фото дизайнов.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="фото/Иконки/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="фото/Иконки//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="фото/Иконки//favicon-16x16.png"
+    />
+    <link rel="manifest" href="фото/Иконки//site.webmanifest" />
+    <title>Десерты</title>
+
+    <style>
+      /* body {
+
+            font-family: Arial, sans-serif;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+        } */
+
+      .gallery {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        margin: 20px;
+      }
+
+      .gallery img {
+        width: 150px;
+
+        height: auto;
+
+        margin: 10px;
+
+        cursor: pointer;
+
+        border: 2px solid #ccc;
+
+        border-radius: 5px;
+
+        transition: transform 0.2s;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+
+      .modal {
+        display: none;
+
+        position: fixed;
+
+        z-index: 1000;
+
+        left: 0;
+
+        top: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        overflow: auto;
+
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .modal img {
+        margin: auto;
+
+        display: block;
+
+        max-width: 80%;
+
+        max-height: 80%;
+
+        margin-top: 50px;
+      }
+
+      .close {
+        position: absolute;
+
+        top: 20px;
+
+        right: 30px;
+
+        color: white;
+
+        font-size: 30px;
+
+        font-weight: bold;
+
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand mt-4" href="index.html"
+            ><img src="фото/logo1.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-4">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html#aboutme"
+                  >О себе</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#mywork">Мои работы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#price">Цены</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#review">Отзывы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <br />
+      <h2 class="text-center">Десерты</h2>
+      <div class="small-text">
+        <p class="card-text all-cake">
+          <small class="text-muted gallery1"
+            ><a href="moredesigns.html">Галерея дизайнов</a> /</small
+          >
+        </p>
+        <p class="card-text all-cake">
+          <small class="text-muted gallery1">Десерты</small>
+        </p>
+      </div>
+
+      <div class="gallery">
+        <img
+          src="фото/десерты/1.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/2.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/3.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/4.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/5.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/6.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/7.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/8.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/9.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/10.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/11.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/12.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/13.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/14.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/15.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/16.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/17.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/18.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/19.jpg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/20.jpeg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/21.jpeg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/22.jpeg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/23.jpeg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/24.jpeg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/25.jpeg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/26.jpeg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/27.jpeg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/28.jpeg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/29.jpeg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/30.jpeg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/31.jpeg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+        <img
+          src="фото/десерты/32.jpeg"
+          alt="фото"
+          onclick="openModal(this.src)"
+        />
+      </div>
+      <div class="modal" id="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" />
+      </div>
+
+      <script>
+        function openModal(src) {
+          document.getElementById("modalImage").src = src;
+          document.getElementById("modal").style.display = "block";
+        }
+        function closeModal() {
+          document.getElementById("modal").style.display = "none";
+        }
+
+        // Закрытие модального окна при клике вне изображения
+
+        window.onclick = function (event) {
+          const modal = document.getElementById("modal");
+          if (event.target == modal) {
+            closeModal();
+          }
+        };
+      </script>
+      <br />
+    </section>
+    <footer>
+      <div class="container" style="max-width: 2277px">
+        <div class="row pt-3 contacts">
+          <div class="col-lg-4 col-md-12 text-center social-media">
+            <a
+              href="https://api.whatsapp.com/send?phone=79259450306&text=Здравствуйте,%20Ануш%20:)%20Меня%20зовут%20[Ваше%20имя],%20и%20я%20хотел(а)%20бы%20проконсультироваться%20по%20поводу%20заказа%20торта."
+              target="_blank"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-warning social-media-button"
+              >
+                <img
+                  src="фото/контакты/whatsapp.png"
+                  alt=""
+                  class="px-1"
+                />WhatsApp
+              </button>
+            </a>
+            <!-- <br /> -->
+            <a
+              href="https://www.instagram.com/an_sweetcake?igsh=MTZvbnMxZmk4ZzhlbQ=="
+              target="_blank"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-warning social-media-button"
+              >
+                <img
+                  src="фото/контакты/Instagram.png"
+                  alt=""
+                  class="px-1"
+                />Instagram
+              </button>
+            </a>
+            <!-- <br /> -->
+            <a href="https://t.me/an_sweetcake" target="_blank">
+              <button
+                type="button"
+                class="btn btn-outline-warning social-media-button"
+              >
+                <img
+                  src="фото/контакты/Teltgram.png"
+                  alt=""
+                  class="px-1"
+                />Telegram
+              </button>
+            </a>
+            <p class="questions mt-3">
+              <a href="questions.html">Часто задаваемые вопросы</a>
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-12 text-center" id="contacts">
+            <!-- <br /> -->
+            <h4 class="contact">Кондитерская An_SweetCake ♥</h4>
+            <p class="contact">
+              Адрес: 142701 Московская область, г. Видное. ул. пр-т Ленинского
+              комсомола, д.5
+            </p>
+            <p class="contact">Тел.: 8 (925) 945-03-06</p>
+          </div>
+          <div class="col-lg-4 col-md-12 text-center">
+            <img
+              style="width: 300px; height: 65px"
+              src="фото/logotip.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

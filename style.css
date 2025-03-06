@@ -1,0 +1,310 @@
+body {
+  max-width: 2277px;
+}
+
+/* Навигационная панель */
+
+.navbar-brand img {
+  width: 400px;
+}
+
+.nav-item {
+  font-size: x-large;
+  font-style: italic;
+}
+
+.nav-item:hover {
+  background-color: #fbdbaf;
+}
+
+@media (max-width: 1028px) {
+  .nav-item {
+    font-size: large;
+  }
+}
+
+@media (max-width: 512px) {
+  .navbar-brand img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-brand img {
+    width: 200px;
+  }
+}
+
+/* Навигационная панель */
+
+/* SECTION */
+
+/* О СЕБЕ */
+body section {
+  background: linear-gradient(150deg, #cd853f 0%, #ffffff 100%);
+}
+.about-me {
+  width: 50%;
+  margin: 0 auto;
+  border: none;
+  background: linear-gradient(90deg, #cd853f 0%, #ffffff 100%);
+}
+
+.about-me img {
+  width: 700px;
+  height: 400px;
+  padding-left: 2px;
+  border-radius: 100px;
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-style: italic;
+}
+
+.card-body p {
+  text-indent: 10%;
+  text-align: justify;
+}
+
+@media (max-width: 1650px) {
+  .about-me {
+    width: 700px;
+  }
+  .about-me img {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-me {
+    width: 500px;
+  }
+
+  .about-me img {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  body section > .about-me {
+    width: 400px;
+  }
+}
+
+@media (max-width: 430px) {
+  .about-me {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* @media (max-width: 390px) {
+  .about-me {
+    width: 350px;
+  }
+} */
+
+@media (max-width: 390px) {
+  body section > .about-me {
+    width: 350px;
+  }
+}
+
+/* О СЕБЕ */
+
+/* МОИ РАБОТЫ */
+
+.mywork {
+  width: 50%;
+  margin: 0 auto;
+  min-width: 260px;
+}
+
+.more-designs button {
+  color: black;
+  border-color: black;
+  background-color: #fbdbaf;
+}
+
+/* МОИ РАБОТЫ */
+
+/* ЦЕНЫ */
+.card-price {
+  background: linear-gradient(360deg, #cd853f 0%, #ffffff 100%);
+}
+.card-group {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.card-group > .card-price img {
+  width: 250px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 46px;
+}
+
+.dop-services-card {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #ffffff00;
+  border: none;
+}
+
+.dop-services p {
+  text-indent: 0%;
+}
+
+.dop-services-card > .dop-services {
+  text-align: justify;
+}
+
+.price-com {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.price-com p {
+  width: 100%;
+  text-indent: 7%;
+  text-align: justify;
+}
+
+.price-com {
+  max-width: 604px;
+  min-width: 310px;
+}
+
+@media (min-width: 640px) {
+  .price-com {
+    min-width: 604px;
+  }
+}
+
+@media (max-width: 1850px) {
+  .card-group {
+    width: 900px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .card-group {
+    width: 750px;
+  }
+  .card-group > .card-price img {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card-group {
+    width: 600px;
+  }
+  .card-group > .card-price img {
+    width: 150px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 630px) {
+  .card-group {
+    width: 550px;
+  }
+  .card-group > .card-price img {
+    width: 150px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* body section > .card-group {
+    width: 400px;
+  } */
+  .card-group {
+    width: 400px;
+  }
+  .card-group > .card-price img {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-group > .card-price {
+    width: 370px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .card-group > .card-price img {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-group > .card-price {
+    width: 300px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .card-group > .card-price img {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+/* ЦЕНЫ */
+/* SECTION */
+
+/* fOOTER */
+body footer {
+  background: linear-gradient(60deg, #cd853f 0%, #ffffff 100%);
+}
+
+.row button {
+  color: black;
+  border-color: black;
+  background-color: #fbdbaf;
+  font-size: x-small;
+}
+
+.row button img {
+  width: 40px;
+  height: 20px;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.questions a {
+  color: black;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.questions a:hover {
+  background-color: #fbdbaf;
+}
+
+@media (max-width: 1127px) {
+  .row button {
+    font-size: xx-small;
+  }
+}
+
+@media (max-width: 1111px) {
+  .contact {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 509px) {
+  .contact {
+    font-size: small;
+  }
+}

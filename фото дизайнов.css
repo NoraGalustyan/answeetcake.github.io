@@ -1,0 +1,28 @@
+.all-cake {
+  display: inline;
+}
+
+.small-text {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.small-text a {
+  text-decoration: none;
+  color: rgb(132, 127, 127);
+}
+
+.small-text a:hover {
+  color: aliceblue;
+}
+
+@media (max-width: 599px) {
+  .small-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+footer {
+  min-height: 132px;
+}

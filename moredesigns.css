@@ -1,0 +1,104 @@
+.all-cakes .designs-card {
+  width: 50%;
+  margin: 0 auto;
+  background: linear-gradient(350deg, #cd853f 0%, #ffffff 100%);
+  border-color: #8b7e6c;
+}
+
+.btn-warning {
+  background-color: #fbdbaf;
+  color: black;
+  border-color: black;
+}
+
+.card-body img {
+  width: 250px;
+  height: 300px;
+  border-radius: 50px;
+}
+
+.card-body p {
+  font-size: 17px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.all-cakes > .designs-card button {
+  font-size: 14px;
+}
+
+@media (max-width: 1350px) {
+  .all-cakes > .designs-card > .card-body p {
+    font-size: 15px;
+  }
+
+  .all-cakes > .designs-card > .card-body img {
+    width: 220px;
+    height: 270px;
+  }
+}
+
+@media (max-width: 1105px) {
+  .all-cakes > .designs-card > .card-body p {
+    font-size: 13px;
+  }
+
+  .all-cakes > .designs-card > .card-body img {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 990px) {
+  .all-cakes > .designs-card {
+    width: 400px;
+    height: 563px;
+  }
+
+  .all-cakes > .designs-card > .card-body p {
+    font-size: 14px;
+  }
+
+  .all-cakes > .designs-card button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 390px) {
+  .all-cakes > .designs-card {
+    width: 370px;
+    height: 500px;
+  }
+
+  .all-cakes > .designs-card > .card-body img {
+    width: 180px;
+    height: 200px;
+  }
+  .all-cakes > .designs-card button {
+    font-size: 13px;
+  }
+
+  .all-cakes > .designs-card > .card-body {
+    width: 350px;
+    height: 480px;
+  }
+
+  .all-cakes > .designs-card > .card-body p {
+    width: 330px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .all-cakes > .designs-card {
+    width: 345px;
+    height: 500px;
+  }
+  .all-cakes > .designs-card > .card-body p {
+    width: 315px;
+    font-size: 12px;
+  }
+  .all-cakes > .designs-card button {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,22 @@
+.faq {
+  width: 80%;
+  margin: 0 auto;
+}
+
+details {
+  background: linear-gradient(350deg, #cd853f 0%, #ffffff 100%);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  border-color: black;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+details[open] {
+  background-color: #eef;
+}
