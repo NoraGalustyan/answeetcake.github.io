@@ -10,7 +10,7 @@ body {
 
 .nav-item {
   font-size: x-large;
-  font-style: italic;
+  font-style: normal;
 }
 
 .nav-item:hover {
@@ -51,8 +51,8 @@ body section {
 }
 
 .about-me img {
-  width: 700px;
-  height: 400px;
+  width: 250px;
+  height: 300px;
   padding-left: 2px;
   border-radius: 100px;
 }
@@ -67,13 +67,14 @@ h2 {
   text-align: justify;
 }
 
-@media (max-width: 1650px) {
+@media (min-width: 1100px) {
+  .about-me {
+    min-width: 900px;
+  }
+}
+@media (max-width: 1100px) {
   .about-me {
     width: 700px;
-  }
-  .about-me img {
-    width: 600px;
-    height: 400px;
   }
 }
 
@@ -81,10 +82,8 @@ h2 {
   .about-me {
     width: 500px;
   }
-
   .about-me img {
-    width: 350px;
-    height: 300px;
+    padding-top: 2px;
   }
 }
 
@@ -101,12 +100,6 @@ h2 {
   }
 }
 
-/* @media (max-width: 390px) {
-  .about-me {
-    width: 350px;
-  }
-} */
-
 @media (max-width: 390px) {
   body section > .about-me {
     width: 350px;
@@ -121,6 +114,21 @@ h2 {
   width: 50%;
   margin: 0 auto;
   min-width: 260px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #e7c697;
+  border-radius: 50%;
+  padding: 0.7rem;
+}
+
+.carousel-control-prev {
+  left: -50px;
+}
+
+.carousel-control-next {
+  right: -50px;
 }
 
 .more-designs button {
@@ -202,7 +210,7 @@ h2 {
 
 @media (max-width: 1000px) {
   .card-group {
-    width: 600px;
+    width: 700px;
   }
   .card-group > .card-price img {
     width: 150px;
@@ -210,7 +218,14 @@ h2 {
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 720px) {
+  .card-group {
+    width: 630px;
+    font-size: small;
+  }
+}
+
+@media (max-width: 649px) {
   .card-group {
     width: 550px;
   }
@@ -220,16 +235,16 @@ h2 {
   }
 }
 
-@media (max-width: 575px) {
-  /* body section > .card-group {
-    width: 400px;
-  } */
+@media (max-width: 575.33px) {
   .card-group {
-    width: 400px;
+    width: 390px;
   }
   .card-group > .card-price img {
     width: 200px;
     height: 250px;
+  }
+  .card-price {
+    max-height: 430px;
   }
 }
 
@@ -237,8 +252,10 @@ h2 {
   .card-group > .card-price {
     width: 370px;
     width: 90%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin: 19px;
   }
+
   .card-group > .card-price img {
     width: 200px;
     height: 250px;
@@ -258,6 +275,11 @@ h2 {
 }
 
 /* ЦЕНЫ */
+
+/* ОТЗЫВЫ */
+
+/* ОТЗЫВЫ */
+
 /* SECTION */
 
 /* fOOTER */
@@ -273,8 +295,7 @@ body footer {
 }
 
 .row button img {
-  width: 40px;
-  height: 20px;
+  width: 30px;
 }
 
 .social-media a {
@@ -300,6 +321,12 @@ body footer {
 @media (max-width: 1111px) {
   .contact {
     font-size: medium;
+  }
+}
+
+@media (max-width: 991px) {
+  body footer {
+    background: linear-gradient(200deg, #ffebcd 0%, #ffffff 100%);
   }
 }
 
