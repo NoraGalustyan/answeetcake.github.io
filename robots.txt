@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://answeetcake.ru/sitemap
+Host: https://answeetcake.ru
